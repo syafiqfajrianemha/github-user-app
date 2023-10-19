@@ -1,18 +1,18 @@
 package com.syafiqfajrianemha.githubuser.ui.splashscreen
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
 import com.syafiqfajrianemha.githubuser.R
 import com.syafiqfajrianemha.githubuser.ui.MainActivity
 import com.syafiqfajrianemha.githubuser.ui.settings.SettingFactory
 import com.syafiqfajrianemha.githubuser.ui.settings.SettingPreferences
-import com.syafiqfajrianemha.githubuser.ui.viewmodel.SettingViewModel
 import com.syafiqfajrianemha.githubuser.ui.settings.dataStore
+import com.syafiqfajrianemha.githubuser.ui.viewmodel.SettingViewModel
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

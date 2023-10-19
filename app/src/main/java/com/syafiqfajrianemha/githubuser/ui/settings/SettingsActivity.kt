@@ -1,8 +1,8 @@
 package com.syafiqfajrianemha.githubuser.ui.settings
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CompoundButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.ViewModelProvider
 import com.syafiqfajrianemha.githubuser.databinding.ActivitySettingsBinding
