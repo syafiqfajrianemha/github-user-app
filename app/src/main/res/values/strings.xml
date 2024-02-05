@@ -12,4 +12,5 @@
     <string name="dark_mode">Dark Mode</string>
 
     <string name="github_logo">GitHub Logo</string>
+    <string name="there_is_no_favorite">There is no favorite.</string>
 </resources>

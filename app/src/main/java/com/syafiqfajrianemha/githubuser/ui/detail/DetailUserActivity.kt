@@ -77,10 +77,10 @@ class DetailUserActivity : AppCompatActivity() {
         binding.btnFavorite.setOnClickListener {
             if (!isFavorite) {
                 favoriteUserViewModel.insertFavoriteUser(favoriteUserEntity)
-                Toast.makeText(this, "Berhasil ditambahkan ke Favorit!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Favorite added successfully.", Toast.LENGTH_SHORT).show()
             } else {
                 favoriteUserViewModel.deleteFavoriteUser(favoriteUserEntity)
-                Toast.makeText(this, "Favorit berhasil dihapus.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Favorite deleted successfully.", Toast.LENGTH_SHORT).show()
             }
         }
 

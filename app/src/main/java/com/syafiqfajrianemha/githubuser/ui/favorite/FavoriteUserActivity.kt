@@ -1,9 +1,11 @@
 package com.syafiqfajrianemha.githubuser.ui.favorite
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.syafiqfajrianemha.githubuser.data.remote.response.ItemsItem
 import com.syafiqfajrianemha.githubuser.databinding.ActivityFavoriteUserBinding
@@ -30,7 +32,13 @@ class FavoriteUserActivity : AppCompatActivity() {
         binding.rvUserFavorite.layoutManager = LinearLayoutManager(this)
 
         favoriteUserViewModel.getAllFavoriteUser().observe(this) { favUsers ->
+            val cekUser = favUsers.isEmpty()
+            Log.d("FavUsers", cekUser.toString())
             if (favUsers != null) {
+                if (favUsers.isEmpty()) {
+                    binding.tvNoFavorite.visibility = View.VISIBLE
+                }
+
                 val items = arrayListOf<ItemsItem>()
                 favUsers.map {
                     val item = ItemsItem(it.username, it.avatarUrl)
